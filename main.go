@@ -18,4 +18,8 @@ func main() {
 	for _, scene := range o.Scenes {
 		log.Printf("%d %s", scene.SceneIndex, scene.SceneName)
 	}
+
+	for _, input := range o.AudioInputs {
+		log.Printf("%s: %s", input.InputKind, input.InputName)
+	}
 }
